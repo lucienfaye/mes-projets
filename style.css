@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+:root {
+    --my-color-gris: #f3f5f8;
+    --my-color-gris-fonce: #3d535f;
+    --my-color-vert: #55ff8e;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--my-color-gris);
+}
+.entete{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800px;
+    color: var(--my-color-gris-fonce);
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 70px;
+    color: var(--my-color-vert);
+}
+.logo span{
+    color: var(--my-color-vert);
+}
+.menu{
+    display: flex;
+
+}
+.menu li{
+    margin: 0 15px;
+}
+.menu li a{
+    font-size: 20px;
+    color: var(--my-color-gris-fonce);
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    
+}
+.reseaux a{
+    font-size: 30px;
+    color: var(--my-color-gris-fonce);
+    margin: 20px 15px;
+}
+.menu li:hover a, .reseaux a:hover{
+    color: var(--my-color-vert);
+}
+.corps{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.Cgauche, .Cdroite{
+    width: 50%;
+}
+.Cgauche{
+    z-index: 5;
+}
+.textB{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: var(--my-color-gris-fonce);
+}
+.textB::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: var(--my-color-vert);
+}
+h1{
+    display: block;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: var(--my-color-gris-fonce);
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1,2em;
+    text-align: justify;
+    color: var(--my-color-gris-fonce);
+}
+.btn2{
+    width: 100%;
+    position: relative;
+    left: 50px;
+}
+button{
+    border: none;
+    outline:  none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: var(--my-color-gris-fonce);
+    color: #f3f5f8;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    background-color: var(--my-color-vert);
+}
+.groupImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.groupImg img{
+    position: relative;
+    height: 100%;
+    width: calc(105%);
+    right: -25px;
+    top: 5px;
+    animation: animateImg 5s linear infinite;
+}
+@keyframes animateImg{
+    50%{
+        right: 10px;
+        top: 15px;
+    }
+}
+.groupImg #idspl{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%,-50%) rotate(-15deg);
+    filter: saturate(200%);
+    width: 160%;
+    animation: animateSplash 5s linear infinite;
+}
+@keyframes animateSplash{
+    50%{
+        right: 37%;
+        top: 60%;
+        width: 155%;
+    }
+}
+.corps::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#42fe80,white);
+    left: -17%;
+    top: 40%;
+    animation: beforeAnime 6s linear infinite;
+}
+@keyframes beforeAnime{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+.corps::after{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#42fe80,white);
+    left: 35%;
+    top: 15%;
+    animation: afterAnime 6s linear infinite;
+}
+@keyframes afterAnime{
+    50%{
+        left: 27%;
+        top: 10%;
+    }
+}
+#textDefil{
+    color: var(--my-color-vert);
+}

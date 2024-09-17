@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e684f0790.js" crossorigin="anonymous"></script>
+    <title>Mon porte folio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <nav class="entete">
+            <div class="logo"><span>D</span>éveloppeur<b>.</b></div>
+            <div class="menu">
+               <li><a href="#">Acceuil</a></li>
+               <li><a href="#">Compétences</a></li>
+               <li><a href="#">À Propos</a></li>
+               <li><a href="#">Contact</a></li>
+            </div>
+            <div class="reseaux">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </nav>
+        <div class="corps">
+            <div class="Cgauche">
+                <span class="textB">Salut</span>
+                <h1>Je suis <span id="textDefil"></span></h1>
+                <p>Développeur web  |  Analiste développeur  |  FullStack</p>
+                <div class="btn2">
+                    <button>Télècharger le CV</button>
+                    <button>Prêt</button>
+                </div>
+            </div>
+            <div class="Cdroite">
+                <div class="groupImg">
+                    <img src="Img/pngegg__1_-removebg.png" id="idspl">
+                    <img src="Img/lucio-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#textDefil', {
+            strings: ["Codeur", "Développeur"],
+            loop:1,
+            startDelay: 100,
+            backSpeed: 100,
+            typeSpeed: 50,
+        });
+    </script> 
+</body>
+</html>
